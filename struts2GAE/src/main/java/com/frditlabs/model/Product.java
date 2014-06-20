@@ -1,20 +1,10 @@
 package com.frditlabs.model;
 
-import javax.jdo.annotations.IdGeneratorStrategy;
-import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.Persistent;
-import javax.jdo.annotations.PrimaryKey;
 
-@PersistenceCapable
 public class Product {
-	@PrimaryKey
-    @Persistent(valueStrategy = IdGeneratorStrategy.SEQUENCE)
 	private Long id;
-	@Persistent
 	private String name;
-	@Persistent
 	private String description;
-	@Persistent
 	private String userMail;
 
 	public Product(){}

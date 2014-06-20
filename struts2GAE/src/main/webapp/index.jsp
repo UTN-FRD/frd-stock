@@ -1,1 +1,2 @@
-<% response.sendRedirect("hello"); %>
+Index
+<a href="/ProductAction.action">Productos</a>
