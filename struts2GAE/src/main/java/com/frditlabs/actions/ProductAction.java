@@ -1,15 +1,14 @@
 package com.frditlabs.actions;
 
-import com.frditlabs.model.Product;
-
-import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.convention.annotation.Result;
-import org.apache.struts2.convention.annotation.Results;
-
 import org.apache.struts2.convention.annotation.Action;
+import org.apache.struts2.convention.annotation.Result;
+
+import com.frditlabs.model.Product;
+import com.opensymphony.xwork2.ActionSupport;
 
 public class ProductAction extends ActionSupport {
 
+	private static final long serialVersionUID = 1L;
 	Product product;
 	
 	@Action(value="productos", results={

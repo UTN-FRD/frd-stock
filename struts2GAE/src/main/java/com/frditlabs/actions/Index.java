@@ -9,4 +9,6 @@ import com.opensymphony.xwork2.ActionSupport;
 @Result(name="success",location="index.jsp")
 public class Index extends ActionSupport {
 
+	private static final long serialVersionUID = 1L;
+
 }
