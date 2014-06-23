@@ -8,8 +8,15 @@
 </head>
 <body>
 Informacion de productos
-<h1><s:property value="product.name"/></h1>
-<p>ID= (<s:property value="product.id"/>)</p>
-<p><s:property value="product.description"/></p>
+
+
+
+<s:iterator value="productos" var="p">
+	<h1><s:property value="#p.name"/></h1>
+	<p>ID= (<s:property value="#p.id"/>)</p>
+	<p><s:property value="#p.description"/></p>
+	<hr>
+</s:iterator>
+
 </body>
 </html>
