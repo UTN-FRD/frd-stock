@@ -5,18 +5,27 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Productos</title>
+<link href="http://localhost:8888/css/bootstrap.css" rel="stylesheet">
+
 </head>
 <body>
 Informacion de productos
 
 
 
+<table>
+	<tr>
+		<th>Nombre</th>
+		<th>ID</th>
+		<th>Descripcion</th>
+	</tr>
 <s:iterator value="productos" var="p">
-	<h1><s:property value="#p.name"/></h1>
-	<p>ID= (<s:property value="#p.id"/>)</p>
-	<p><s:property value="#p.description"/></p>
-	<hr>
+	<tr>
+		<td><s:property value="#p.name"/></td>
+		<td><s:property value="#p.id"/></td>
+		<td><s:property value="#p.description"/></td>
+	</tr>
 </s:iterator>
-
+</table>
 </body>
 </html>

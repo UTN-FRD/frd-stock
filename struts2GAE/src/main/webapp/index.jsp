@@ -1,2 +1,2 @@
 Index
-<a href="/ProductAction.action">Productos</a>
+<a href="/productos">Productos</a>
