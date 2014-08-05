@@ -19,7 +19,7 @@
 		  <a class="navbar-brand" href="#">Stock FRD</a>
 		</div>
 		<div class="navbar-collapse collapse navbar-responsive-collapse">
-			<jsp:include page="/resources/userMenu.jsp"></jsp:include>
+			<!-- jsp:include page="/resources/userMenu.jsp"></jsp:include -->
 		</div><!-- /.nav-collapse -->
 	</div>
 	<div class="container">

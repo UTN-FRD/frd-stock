@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Result;
 
+import com.frditlabs.datamanager.ProductManager;
 import com.frditlabs.model.Product;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -49,6 +50,8 @@ public class ProductAction extends ActionSupport {
 		product.setDescription("list descripcion 7");
 		product.setName("list 7");
 		productos.add(product);
+		
+		ProductManager.save(product);
 		
 		return SUCCESS;
 	}
